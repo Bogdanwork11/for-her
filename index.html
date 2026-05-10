@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Для Анюты</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="flowers-container" id="flowers"></div>
+
+    <div class="main-wrapper">
+        <div class="central-card">
+            <div class="photo-icon">
+                <div class="photo-cropper">
+                    <img src="images/girl.jpg" alt="Анюта" class="profile-photo" />
+                </div>
+            </div>
+
+            <h1>Привет, Анюта! 🌸</h1>
+            <p class="sub-text">Нажми сюда</p>
+
+            <button onclick="showLoveAlert()" id="openBtn" class="open-btn">Открыть 💌</button>
+            
+            <button id="nextMessageBtn" class="open-btn hidden" style="margin-top: 15px; background-color: #333;">Новое послание ✉️</button>
+        </div>
+
+        <div id="cmdWindow" class="cmd-container hidden">
+            <div class="cmd-header">
+                <span class="cmd-title">C:\Users\Bogdan\love.exe</span>
+                <span class="cmd-close">_ □ ×</span>
+            </div>
+            <div id="typewriter" class="cmd-body"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
